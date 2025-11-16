@@ -31,10 +31,26 @@ This 3-part, hands-on series introduces key supervised learning concepts through
 
 ```
 Supervised-Learning-Workshop/
-│-- deliverable/     # Notebooks for completing deliverable
-│-- notebooks/       # Jupyter notebooks for workshop implementations
-│-- LICENSE.txt      # Open-source MIT license
-│-- README.md        # This file
+│
+├── deliverable/                     # Notebooks and datasets for completing deliverable
+│   ├── data/
+│   │   ├── dataset1.csv             # Dataset for Deliverable 1 (Customer Churn)
+│   │   ├── dataset2.csv             # Dataset for Deliverable 2 (Credit Risk)
+│   │   └── dataset3.csv             # Dataset for Deliverable 3 (Housing Prices)
+│   │
+│   ├── 01_dataset1_student.ipynb    # Deliverable notebook 1
+│   ├── 02_dataset2_student.ipynb    # Deliverable notebook 2
+│   └── 03_dataset3_student.ipynb    # Deliverable notebook 3
+│
+├── notebooks/                       # Workshop demonstration notebooks
+│   ├── data/
+│   │   └── spotify-dataset.csv      # Dataset used in the Spotify regression project
+│   │
+│   ├── 1_algorithms.ipynb           # Intro notebook covering implementing relevant SL algorithms
+│   └── 2_spotify_project.ipynb      # PROJECT: Predicting Spotify track popularity
+│
+├── LICENSE.txt                      # Open-source MIT license
+└── README.md                        # This file
 ```
 
 ## 📚 **Resources**
@@ -44,38 +60,93 @@ Supervised-Learning-Workshop/
   - [Supervised Learning Workshop – Google Slides](https://docs.google.com/presentation/d/17zIH9_ZeNpZkui3ULUjs6WjWcbYg4DAImDtfnnm8eAM/edit?usp=sharing)
 
 - ### 📖 Recommended Readings and Learning:
-  - ....(will be added)
+  - ....will be added
 
 ## 🔧 **Setup Instructions**
 
-### 🧑‍💻 **Run in Google Colab**
+### 🧑‍💻 Run in Google Colab
 
 Open directly in Colab — no installation required:
 
 - [Day 2 Notebook – Algorithms](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/notebooks/1_algorithms.ipynb)
 - [Day 3 Notebook – Spotify Project](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/notebooks/2_spotify_project.ipynb)
 
-## 📣 **Certification & Participation**
+**NOTE:** When running [Day 3 Notebook – Spotify Project](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/notebooks/2_spotify_project.ipynb) in Google Colab, you must upload the dataset (`./notebooks/data/spotify-dataset.csv`):
 
-To receive a DalMLSociety Certificate of Completion:
+1. Download and save the `spotify-dataset.csv` locally.
+2. When prompted in Colab during the setup, upload the CSV you saved.
 
-- Submit the deliverable notebook.
+## 📒 **Deliverable**
 
-## 🌐 **DalMLSociety & Feedback:**
+The deliverable includes completing **one of three** different machine learning problems:
 
-If you have any questions or want to get involved, feel free to reach out at 📧 dmls@dal.ca.
+1. `Customer Churn` – Predict which telecom customers will leave the service (**binary classification**)
+2. `Credit Risk` – Predict likelihood a loan applicant will default (**binary classification**)
+3. `Housing Prices` – Predict house sale price (**regression**)
 
-### 👉 **Stay Connected**
+Each dataset contains **real-world data challenges** (e.g., missing values, outliers, duplicates)
+that make them ideal for practicing data cleaning, preprocessing, and model building.
+
+---
+
+### Instructions
+
+1. Choose one of the notebooks and download its corresponding dataset from this repo.
+
+   - All datasets are located in the `./deliverable/data/` directory.
+
+2. Open the notebook in Google Colab:
+
+   - 📘 [Deliverable 1 – Dataset 1 Notebook (Customer Churn)](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/deliverable/01_dataset1.ipynb)
+   - 📙 [Deliverable 2 – Dataset 2 Notebook (Credit Risk)](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/deliverable/02_dataset2.ipynb)
+   - 📗 [Deliverable 3 – Dataset 3 Notebook (Housing Prices)](https://colab.research.google.com/github/DalMLSociety/Supervised-Learning-Workshop/blob/main/deliverable/03_dataset3.ipynb)
+
+3. Follow the instructions in each notebook:
+
+   - Load and explore the data
+   - Handle missing values and outliers
+   - Clean and preprocess features
+   - Train machine learning models
+   - Evaluate performance
+   - Create visualizations
+   - Briefly summarize your findings
+
+The notebooks provide structure and guidance but leave the implementation up to you. \
+This is intentional - you'll learn more by working through the problems yourself.
+
+### 📤 Submission!
+
+Once you have completed your notebook:
+
+1. **Download your notebook and figures** from Google Colab
+
+> ⚠️ Important: If your Colab session idles too long, it may restart. \
+>  You will need to re-upload your dataset and re-run your notebook before saving figures.
+
+- `File → Download → Download .ipynb`
+- Download `figures_dataset#.zip` from the left side pane
+
+2. **Upload your completed notebook here:**
+
+   [Submission Form](https://airtable.com/appGZ1Cp7fr2YNekA/pagsuGiP3ZtSPovtP/form)
+
+### 📣 Certification & Participation
+
+To receive a **DalMLSociety Supervised Learning Certificate**, submit one of the three deliverable notebooks by:
+
+      ⏰ November 23, 2025 @ 11:59 PM Atlantic Time
+
+## 🌐⚡ **DalMLSociety & Feedback:**
+
+If you have any questions or want to get involved, feel free to reach out to us at 📧 dmls@dal.ca.
+
+### 👉 Stay Connected
 
 - 💬 [Join the Discord Community](https://discord.gg/47Pyqyhnuu)
 - 🧾 [Apply for DMLS Roles 2025–26](https://airtable.com/appbzvXorTGCwSsy9/pagtWdxjYq0FJOosY/form)
 - 💼 [Follow us on LinkedIn](https://www.linkedin.com/company/dalmlsociety/?viewAsMember=true)
 - 📸 [Follow us on Instagram](https://www.instagram.com/dalmlsociety)
 - 🌍 [Visit our Website](http://dmls.dsu.dal.ca)
-
-### ⚡ **Contribution & Feedback**
-
-We love hearing from our community. Whether you’d like to suggest improvements, report an issue, or contribute new ideas, your input helps make DMLS better for everyone.
 
 ## 📌 **License**
 
